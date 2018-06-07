@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "RxContacts"
-  s.version      = "0.1"
+  s.version      = "1.0.0"
   s.summary      = "RxSwift extensions for Contacts framework."
 
   s.homepage     = "https://github.com/satishbabariya/RxContacts"

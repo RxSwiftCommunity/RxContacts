@@ -89,3 +89,48 @@ If you prefer not to use either of the aforementioned dependency managers, you c
 
 ## Get started
 
+
+```swift
+
+import RxContacts
+
+store.rx.requestAccess(for: CNEntityType.contacts).subscribe { (event) in
+            switch event{
+            case .next(let bool):
+                break
+            case .error(let error):
+                break
+            case .completed:
+                break
+            }
+        }
+        
+```      
+
+Notifications
+
+``` swift
+
+//Posted notifications when changes occur in another CNContactStore.
+
+store.rx.didChange().subscribe { (event) in
+            
+}
+
+```
+
+
+
+Methods
+
+``` swift
+
+unifiedContacts(matching predicate: NSPredicate, keysToFetch keys: [CNKeyDescriptor])
+unifiedContact(withIdentifier identifier: String, keysToFetch keys: [CNKeyDescriptor])
+groups(matching predicate: NSPredicate?)
+containers(matching predicate: NSPredicate?) 
+enumerateContacts(with fetchRequest: CNContactFetchRequest) 
+execute(_ saveRequest: CNSaveRequest) 
+
+
+```

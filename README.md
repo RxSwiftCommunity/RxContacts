@@ -3,11 +3,9 @@
 RxContacts is a [RxSwift](https://github.com/ReactiveX/RxSwift) wrapper around the [Contacts Framework](https://developer.apple.com/documentation/contacts).
 
 [![Language: Swift 4](https://img.shields.io/badge/language-swift4-f48041.svg?style=flat-square)](https://developer.apple.com/swift)
-
-[![Version](https://img.shields.io/cocoapods/v/RxContacts.svg?style=flat)](http://cocoapods.org/pods/RxContacts)
-[![License](https://img.shields.io/cocoapods/l/RxContacts.svg?style=flat)](http://cocoapods.org/pods/RxContacts)
-[![Platform](https://img.shields.io/cocoapods/p/RxContacts.svg?style=flat)](http://cocoapods.org/pods/RxContacts)
-
+[![Version](https://img.shields.io/cocoapods/v/RxContacts.svg?style=flat-square)](http://cocoapods.org/pods/RxContacts)
+[![License](https://img.shields.io/cocoapods/l/RxContacts.svg?style=flat-square)](http://cocoapods.org/pods/RxContacts)
+[![Platform](https://img.shields.io/cocoapods/p/RxContacts.svg?style=flat-square)](http://cocoapods.org/pods/RxContacts)
 [![Swift Package Manager](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg?style=flat-square)](https://github.com/apple/swift-package-manager)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat-square)](https://github.com/Carthage/Carthage)
 [![CocoaPods compatible](https://img.shields.io/cocoapods/v/RxContacts.svg?style=flat-square)](https://cocoapods.org/pods/RxContacts)

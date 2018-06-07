@@ -8,7 +8,6 @@ RxContacts is a [RxSwift](https://github.com/ReactiveX/RxSwift) wrapper around t
 [![Platform](https://img.shields.io/cocoapods/p/RxContacts.svg?style=flat-square)](http://cocoapods.org/pods/RxContacts)
 [![Swift Package Manager](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg?style=flat-square)](https://github.com/apple/swift-package-manager)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat-square)](https://github.com/Carthage/Carthage)
-[![CocoaPods compatible](https://img.shields.io/cocoapods/v/RxContacts.svg?style=flat-square)](https://cocoapods.org/pods/RxContacts)
 
 ## Requirements
 

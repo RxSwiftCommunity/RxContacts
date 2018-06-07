@@ -9,9 +9,16 @@
 /* Begin PBXBuildFile section */
 		52D6D9871BEFF229002C0205 /* RxContacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D97C1BEFF229002C0205 /* RxContacts.framework */; };
 		754622DB20C989F30059CDFC /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 754622DA20C989F30059CDFC /* Contacts.framework */; };
-		754622DD20C989FD0059CDFC /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 754622DC20C989FD0059CDFC /* Contacts.framework */; };
-		754622DF20C98A0D0059CDFC /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 754622DE20C98A0D0059CDFC /* Contacts.framework */; };
-		754622E120C98B0F0059CDFC /* CNContactStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754622E020C98B0F0059CDFC /* CNContactStore.swift */; };
+		7546230320C99BD10059CDFC /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 754622DA20C989F30059CDFC /* Contacts.framework */; };
+		7546230420C99BD10059CDFC /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 754622DA20C989F30059CDFC /* Contacts.framework */; };
+		7546230520C99BD10059CDFC /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 754622DA20C989F30059CDFC /* Contacts.framework */; };
+		7546230620C99BD20059CDFC /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 754622DA20C989F30059CDFC /* Contacts.framework */; };
+		7546231820C9A1600059CDFC /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7546231720C9A1600059CDFC /* RxSwift.framework */; };
+		7546231A20C9A16C0059CDFC /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7546231920C9A16B0059CDFC /* RxCocoa.framework */; };
+		7546231C20C9A1890059CDFC /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7546231B20C9A1890059CDFC /* RxSwift.framework */; };
+		7546231E20C9A1990059CDFC /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7546231D20C9A1990059CDFC /* RxCocoa.framework */; };
+		7546232020C9A1B80059CDFC /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7546231F20C9A1B80059CDFC /* RxSwift.framework */; };
+		7546232220C9A1C60059CDFC /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7546232120C9A1C60059CDFC /* RxCocoa.framework */; };
 		8933C7851EB5B820000D00A4 /* RxContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* RxContacts.swift */; };
 		8933C7861EB5B820000D00A4 /* RxContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* RxContacts.swift */; };
 		8933C7871EB5B820000D00A4 /* RxContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* RxContacts.swift */; };
@@ -43,9 +50,12 @@
 		52D6D9E21BEFFF6E002C0205 /* RxContacts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxContacts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6DA0F1BF000BD002C0205 /* RxContacts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxContacts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		754622DA20C989F30059CDFC /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
-		754622DC20C989FD0059CDFC /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Contacts.framework; sourceTree = DEVELOPER_DIR; };
-		754622DE20C98A0D0059CDFC /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.2.sdk/System/Library/Frameworks/Contacts.framework; sourceTree = DEVELOPER_DIR; };
-		754622E020C98B0F0059CDFC /* CNContactStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CNContactStore.swift; sourceTree = "<group>"; };
+		7546231720C9A1600059CDFC /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		7546231920C9A16B0059CDFC /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		7546231B20C9A1890059CDFC /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/Mac/RxSwift.framework; sourceTree = "<group>"; };
+		7546231D20C9A1990059CDFC /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/Mac/RxCocoa.framework; sourceTree = "<group>"; };
+		7546231F20C9A1B80059CDFC /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/watchOS/RxSwift.framework; sourceTree = "<group>"; };
+		7546232120C9A1C60059CDFC /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/watchOS/RxCocoa.framework; sourceTree = "<group>"; };
 		8933C7841EB5B820000D00A4 /* RxContacts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxContacts.swift; sourceTree = "<group>"; };
 		8933C7891EB5B82A000D00A4 /* RxContactsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxContactsTests.swift; sourceTree = "<group>"; };
 		AD2FAA261CD0B6D800659CF4 /* RxContacts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RxContacts.plist; sourceTree = "<group>"; };
@@ -58,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7546231A20C9A16C0059CDFC /* RxCocoa.framework in Frameworks */,
+				7546231820C9A1600059CDFC /* RxSwift.framework in Frameworks */,
 				754622DB20C989F30059CDFC /* Contacts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,6 +79,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52D6D9871BEFF229002C0205 /* RxContacts.framework in Frameworks */,
+				7546230520C99BD10059CDFC /* Contacts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,7 +87,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				754622DF20C98A0D0059CDFC /* Contacts.framework in Frameworks */,
+				7546232220C9A1C60059CDFC /* RxCocoa.framework in Frameworks */,
+				7546232020C9A1B80059CDFC /* RxSwift.framework in Frameworks */,
+				7546230420C99BD10059CDFC /* Contacts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +97,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				754622DD20C989FD0059CDFC /* Contacts.framework in Frameworks */,
+				7546231E20C9A1990059CDFC /* RxCocoa.framework in Frameworks */,
+				7546231C20C9A1890059CDFC /* RxSwift.framework in Frameworks */,
+				7546230320C99BD10059CDFC /* Contacts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +108,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD7502881C68FEDE006590AF /* RxContacts.framework in Frameworks */,
+				7546230620C99BD20059CDFC /* Contacts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,8 +150,12 @@
 		754622D920C989F30059CDFC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				754622DE20C98A0D0059CDFC /* Contacts.framework */,
-				754622DC20C989FD0059CDFC /* Contacts.framework */,
+				7546232120C9A1C60059CDFC /* RxCocoa.framework */,
+				7546231F20C9A1B80059CDFC /* RxSwift.framework */,
+				7546231D20C9A1990059CDFC /* RxCocoa.framework */,
+				7546231B20C9A1890059CDFC /* RxSwift.framework */,
+				7546231920C9A16B0059CDFC /* RxCocoa.framework */,
+				7546231720C9A1600059CDFC /* RxSwift.framework */,
 				754622DA20C989F30059CDFC /* Contacts.framework */,
 			);
 			name = Frameworks;
@@ -143,7 +165,6 @@
 			isa = PBXGroup;
 			children = (
 				8933C7841EB5B820000D00A4 /* RxContacts.swift */,
-				754622E020C98B0F0059CDFC /* CNContactStore.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -387,7 +408,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8933C7851EB5B820000D00A4 /* RxContacts.swift in Sources */,
-				754622E120C98B0F0059CDFC /* CNContactStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,6 +576,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Configs/RxContacts.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -579,6 +604,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Configs/RxContacts.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -595,6 +625,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Configs/RxContactsTests.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.RxContacts.RxContacts-iOS-Tests";
@@ -608,6 +642,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Configs/RxContactsTests.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.RxContacts.RxContacts-iOS-Tests";
@@ -626,6 +664,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
 				INFOPLIST_FILE = Configs/RxContacts.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -648,6 +691,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
 				INFOPLIST_FILE = Configs/RxContacts.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -672,6 +720,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Configs/RxContacts.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -695,6 +748,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Configs/RxContacts.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -714,6 +772,10 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Configs/RxContactsTests.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
@@ -729,6 +791,10 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Configs/RxContactsTests.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;

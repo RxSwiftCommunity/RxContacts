@@ -8,7 +8,6 @@ RxContacts is a [RxSwift](https://github.com/ReactiveX/RxSwift) wrapper around t
 [![Platform](https://img.shields.io/cocoapods/p/RxContacts.svg?style=flat-square)](http://cocoapods.org/pods/RxContacts)
 [![Swift Package Manager](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg?style=flat-square)](https://github.com/apple/swift-package-manager)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat-square)](https://github.com/Carthage/Carthage)
-[![CocoaPods compatible](https://img.shields.io/cocoapods/v/RxContacts.svg?style=flat-square)](https://cocoapods.org/pods/RxContacts)
 
 ## Requirements
 
@@ -90,3 +89,48 @@ If you prefer not to use either of the aforementioned dependency managers, you c
 
 ## Get started
 
+
+```swift
+
+import RxContacts
+
+store.rx.requestAccess(for: CNEntityType.contacts).subscribe { (event) in
+            switch event{
+            case .next(let bool):
+                break
+            case .error(let error):
+                break
+            case .completed:
+                break
+            }
+        }
+        
+```      
+
+Notifications
+
+``` swift
+
+//Posted notifications when changes occur in another CNContactStore.
+
+store.rx.didChange().subscribe { (event) in
+            
+}
+
+```
+
+
+
+Methods
+
+``` swift
+
+unifiedContacts(matching predicate: NSPredicate, keysToFetch keys: [CNKeyDescriptor])
+unifiedContact(withIdentifier identifier: String, keysToFetch keys: [CNKeyDescriptor])
+groups(matching predicate: NSPredicate?)
+containers(matching predicate: NSPredicate?) 
+enumerateContacts(with fetchRequest: CNContactFetchRequest) 
+execute(_ saveRequest: CNSaveRequest) 
+
+
+```

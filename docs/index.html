@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>RxContacts  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="RxContacts  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">RxContacts Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">RxContacts Reference</a>
+        <img id="carat" src="img/carat.png" />
+        RxContacts  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Extensions/Reactive.html">Reactive</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <h1 id='rxcontacts' class='heading'>RxContacts</h1>
+
+<p>RxContacts is a <a href="https://github.com/ReactiveX/RxSwift">RxSwift</a> wrapper around the <a href="https://developer.apple.com/documentation/contacts">Contacts Framework</a>.</p>
+
+<p><a href="https://developer.apple.com/swift"><img src="https://img.shields.io/badge/language-swift4-f48041.svg?style=flat-square" alt="Language: Swift 4"></a>
+<a href="http://cocoapods.org/pods/RxContacts"><img src="https://img.shields.io/cocoapods/v/RxContacts.svg?style=flat-square" alt="Version"></a>
+<a href="http://cocoapods.org/pods/RxContacts"><img src="https://img.shields.io/cocoapods/l/RxContacts.svg?style=flat-square" alt="License"></a>
+<a href="http://cocoapods.org/pods/RxContacts"><img src="https://img.shields.io/cocoapods/p/RxContacts.svg?style=flat-square" alt="Platform"></a>
+<a href="https://github.com/apple/swift-package-manager"><img src="https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg?style=flat-square" alt="Swift Package Manager"></a>
+<a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat-square" alt="Carthage compatible"></a></p>
+<h2 id='requirements' class='heading'>Requirements</h2>
+
+<ul>
+<li>iOS 9.0+ / Mac OS X 10.12+ /  watchOS 3.0+</li>
+<li>Xcode 9.0+</li>
+</ul>
+<h2 id='installation' class='heading'>Installation</h2>
+<h3 id='cocoapods' class='heading'>CocoaPods</h3>
+
+<p><a href="http://cocoapods.org">CocoaPods</a> is a dependency manager for Cocoa projects. You can install it with the following command:</p>
+<pre class="highlight shell"><code><span class="gp">$ </span>gem install cocoapods
+</code></pre>
+
+<p>To integrate RxContacts into your Xcode project using CocoaPods, specify it in your <code>Podfile</code>:</p>
+<pre class="highlight ruby"><code><span class="n">source</span> <span class="s1">'https://github.com/CocoaPods/Specs.git'</span>
+<span class="n">platform</span> <span class="ss">:ios</span><span class="p">,</span> <span class="s1">'8.0'</span>
+<span class="n">use_frameworks!</span>
+
+<span class="n">pod</span> <span class="s1">'RxContacts'</span>
+
+</code></pre>
+
+<p>Then, run the following command:</p>
+<pre class="highlight shell"><code><span class="gp">$ </span>pod install
+</code></pre>
+<h3 id='carthage' class='heading'>Carthage</h3>
+
+<p><a href="https://github.com/Carthage/Carthage">Carthage</a> is a decentralized dependency manager that automates the process of adding frameworks to your Cocoa application.</p>
+
+<p>You can install Carthage with <a href="http://brew.sh/">Homebrew</a> using the following command:</p>
+<pre class="highlight shell"><code><span class="gp">$ </span>brew update
+<span class="gp">$ </span>brew install carthage
+</code></pre>
+
+<p>To integrate RxContacts into your Xcode project using Carthage, specify it in your <code>Cartfile</code>:</p>
+<pre class="highlight plaintext"><code>github "SwiftyContacts/RxContacts" ~&gt; 0.1
+</code></pre>
+<h3 id='swift-package-manager' class='heading'>Swift Package Manager</h3>
+
+<p>To use RxContacts as a <a href="https://swift.org/package-manager/">Swift Package Manager</a> package just add the following in your Package.swift file.</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">PackageDescription</span>
+
+<span class="k">let</span> <span class="nv">package</span> <span class="o">=</span> <span class="kt">Package</span><span class="p">(</span>
+    <span class="nv">name</span><span class="p">:</span> <span class="s">"HelloContacts"</span><span class="p">,</span>
+    <span class="nv">dependencies</span><span class="p">:</span> <span class="p">[</span>
+        <span class="o">.</span><span class="kt">Package</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="s">"https://github.com/satishbabariya/RxContacts"</span><span class="p">,</span> <span class="s">"0.1"</span><span class="p">)</span>
+    <span class="p">]</span>
+<span class="p">)</span>
+</code></pre>
+<h3 id='manually' class='heading'>Manually</h3>
+
+<p>If you prefer not to use either of the aforementioned dependency managers, you can integrate RxContacts into your project manually.</p>
+<h4 id='embeded-binaries' class='heading'>Embeded Binaries</h4>
+
+<ul>
+<li>Download the latest release from <a href="https://github.com/satishbabariya/RxContacts/releases">https://github.com/satishbabariya/RxContacts/releases</a></li>
+<li>Next, select your application project in the Project Navigator (blue project icon) to navigate to the target configuration window and select the application target under the <q>Targets</q> heading in the sidebar.</li>
+<li>In the tab bar at the top of that window, open the <q>General</q> panel.</li>
+<li>Click on the <code>+</code> button under the <q>Embedded Binaries</q> section.</li>
+<li>Add the downloaded <code>RxContacts.framework</code>.</li>
+<li>And that&rsquo;s it!</li>
+</ul>
+<h2 id='get-started' class='heading'>Get started</h2>
+<pre class="highlight swift"><code>
+<span class="kd">import</span> <span class="kt">RxContacts</span>
+
+<span class="n">store</span><span class="o">.</span><span class="n">rx</span><span class="o">.</span><span class="nf">requestAccess</span><span class="p">(</span><span class="nv">for</span><span class="p">:</span> <span class="kt">CNEntityType</span><span class="o">.</span><span class="n">contacts</span><span class="p">)</span><span class="o">.</span><span class="n">subscribe</span> <span class="p">{</span> <span class="p">(</span><span class="n">event</span><span class="p">)</span> <span class="k">in</span>
+            <span class="k">switch</span> <span class="n">event</span><span class="p">{</span>
+            <span class="k">case</span> <span class="o">.</span><span class="nf">next</span><span class="p">(</span><span class="k">let</span> <span class="nv">bool</span><span class="p">):</span>
+                <span class="k">break</span>
+            <span class="k">case</span> <span class="o">.</span><span class="nf">error</span><span class="p">(</span><span class="k">let</span> <span class="nv">error</span><span class="p">):</span>
+                <span class="k">break</span>
+            <span class="k">case</span> <span class="o">.</span><span class="nv">completed</span><span class="p">:</span>
+                <span class="k">break</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+
+</code></pre>
+
+<p>Notifications</p>
+<pre class="highlight swift"><code>
+<span class="c1">//Posted notifications when changes occur in another CNContactStore.</span>
+
+<span class="n">store</span><span class="o">.</span><span class="n">rx</span><span class="o">.</span><span class="nf">didChange</span><span class="p">()</span><span class="o">.</span><span class="n">subscribe</span> <span class="p">{</span> <span class="p">(</span><span class="n">event</span><span class="p">)</span> <span class="k">in</span>
+
+<span class="p">}</span>
+
+</code></pre>
+
+<p>Methods</p>
+<pre class="highlight swift"><code>
+<span class="nf">unifiedContacts</span><span class="p">(</span><span class="n">matching</span> <span class="nv">predicate</span><span class="p">:</span> <span class="kt">NSPredicate</span><span class="p">,</span> <span class="n">keysToFetch</span> <span class="nv">keys</span><span class="p">:</span> <span class="p">[</span><span class="kt">CNKeyDescriptor</span><span class="p">])</span>
+<span class="nf">unifiedContact</span><span class="p">(</span><span class="n">withIdentifier</span> <span class="nv">identifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">keysToFetch</span> <span class="nv">keys</span><span class="p">:</span> <span class="p">[</span><span class="kt">CNKeyDescriptor</span><span class="p">])</span>
+<span class="nf">groups</span><span class="p">(</span><span class="n">matching</span> <span class="nv">predicate</span><span class="p">:</span> <span class="kt">NSPredicate</span><span class="p">?)</span>
+<span class="nf">containers</span><span class="p">(</span><span class="n">matching</span> <span class="nv">predicate</span><span class="p">:</span> <span class="kt">NSPredicate</span><span class="p">?)</span> 
+<span class="nf">enumerateContacts</span><span class="p">(</span><span class="n">with</span> <span class="nv">fetchRequest</span><span class="p">:</span> <span class="kt">CNContactFetchRequest</span><span class="p">)</span> 
+<span class="nf">execute</span><span class="p">(</span><span class="n">_</span> <span class="nv">saveRequest</span><span class="p">:</span> <span class="kt">CNSaveRequest</span><span class="p">)</span> 
+
+
+</code></pre>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://github.com/satishbabariya/RxContacts" target="_blank" rel="external">Satish Babariya</a>. All rights reserved. (Last updated: 2018-06-08)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

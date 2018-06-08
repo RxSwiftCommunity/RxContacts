@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Reactive Extension Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Extension/Reactive" class="dashAnchor"></a>
+    <a title="Reactive Extension Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">RxContacts Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">RxContacts Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Reactive Extension Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Reactive.html">Reactive</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Reactive</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Reactive</span><span class="o">&lt;</span><span class="kt">Base</span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
+            
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Privacy%20Access"></a>
+                <a name="//apple_ref/swift/Section/Privacy Access" class="dashAnchor"></a>
+                <a href="#/Privacy%20Access">
+                  <h3 class="section-name">Privacy Access</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7RxSwift8ReactiveV0A8ContactsSo14CNContactStoreCRbzlE13requestAccessAA10ObservableCySbGSC12CNEntityTypeO3for_tF"></a>
+                    <a name="//apple_ref/swift/Method/requestAccess(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7RxSwift8ReactiveV0A8ContactsSo14CNContactStoreCRbzlE13requestAccessAA10ObservableCySbGSC12CNEntityTypeO3for_tF">requestAccess(for:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Requests access to the user&rsquo;s contacts.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">requestAccess</span><span class="p">(</span><span class="k">for</span> <span class="nv">entityType</span><span class="p">:</span> <span class="kt">CNEntityType</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Observable</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>entityType</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Set to CNEntityTypeContacts.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Set granted to true if the user allows access and error is nil.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Fetching%20Unified%20Contacts"></a>
+                <a name="//apple_ref/swift/Section/Fetching Unified Contacts" class="dashAnchor"></a>
+                <a href="#/Fetching%20Unified%20Contacts">
+                  <h3 class="section-name">Fetching Unified Contacts</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7RxSwift8ReactiveV0A8ContactsSo14CNContactStoreCRbzlE07unifiedD0AA10ObservableCySaySo0E0CGGSo11NSPredicateC8matching_SaySo15CNKeyDescriptor_pG11keysToFetchtF"></a>
+                    <a name="//apple_ref/swift/Method/unifiedContacts(matching:keysToFetch:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7RxSwift8ReactiveV0A8ContactsSo14CNContactStoreCRbzlE07unifiedD0AA10ObservableCySaySo0E0CGGSo11NSPredicateC8matching_SaySo15CNKeyDescriptor_pG11keysToFetchtF">unifiedContacts(matching:keysToFetch:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Fetches all unified contacts matching the specified predicate.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">unifiedContacts</span><span class="p">(</span><span class="n">matching</span> <span class="nv">predicate</span><span class="p">:</span> <span class="kt">NSPredicate</span><span class="p">,</span>
+                            <span class="n">keysToFetch</span> <span class="nv">keys</span><span class="p">:</span> <span class="p">[</span><span class="kt">CNKeyDescriptor</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Observable</span><span class="o">&lt;</span><span class="p">[</span><span class="kt">CNContact</span><span class="p">]</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>predicate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The predicate to match against.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keys</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The properties to fetch in the returned CNContact objects. You should fetch only the properties that you plan to use. Note that you can combine contact keys and contact key descriptors.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An array of CNContact objects matching the predicate.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7RxSwift8ReactiveV0A8ContactsSo14CNContactStoreCRbzlE14unifiedContactAA10ObservableCySo0E0CGSS14withIdentifier_SaySo15CNKeyDescriptor_pG11keysToFetchtF"></a>
+                    <a name="//apple_ref/swift/Method/unifiedContact(withIdentifier:keysToFetch:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7RxSwift8ReactiveV0A8ContactsSo14CNContactStoreCRbzlE14unifiedContactAA10ObservableCySo0E0CGSS14withIdentifier_SaySo15CNKeyDescriptor_pG11keysToFetchtF">unifiedContact(withIdentifier:keysToFetch:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Fetches a unified contact for the specified contact identifier.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">unifiedContact</span><span class="p">(</span><span class="n">withIdentifier</span> <span class="nv">identifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                           <span class="n">keysToFetch</span> <span class="nv">keys</span><span class="p">:</span> <span class="p">[</span><span class="kt">CNKeyDescriptor</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Observable</span><span class="o">&lt;</span><span class="kt">CNContact</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>identifier</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The identifier of the contact to fetch.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keys</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The properties to fetch in the returned CNContact object.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A unified contact matching or linked to the identifier.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Fetching%20and%20Saving"></a>
+                <a name="//apple_ref/swift/Section/Fetching and Saving" class="dashAnchor"></a>
+                <a href="#/Fetching%20and%20Saving">
+                  <h3 class="section-name">Fetching and Saving</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7RxSwift8ReactiveV0A8ContactsSo14CNContactStoreCRbzlE6groupsAA10ObservableCySaySo7CNGroupCGGSo11NSPredicateCSg8matching_tF"></a>
+                    <a name="//apple_ref/swift/Method/groups(matching:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7RxSwift8ReactiveV0A8ContactsSo14CNContactStoreCRbzlE6groupsAA10ObservableCySaySo7CNGroupCGGSo11NSPredicateCSg8matching_tF">groups(matching:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Fetches all groups matching the specified predicate.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">groups</span><span class="p">(</span><span class="n">matching</span> <span class="nv">predicate</span><span class="p">:</span> <span class="kt">NSPredicate</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Observable</span><span class="o">&lt;</span><span class="p">[</span><span class="kt">CNGroup</span><span class="p">]</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>predicate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The predicate to use to fetch the matching groups. Set predicate to nil to match all groups.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An array of CNGroup objects that match the predicate.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7RxSwift8ReactiveV0A8ContactsSo14CNContactStoreCRbzlE10containersAA10ObservableCySaySo11CNContainerCGGSo11NSPredicateCSg8matching_tF"></a>
+                    <a name="//apple_ref/swift/Method/containers(matching:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7RxSwift8ReactiveV0A8ContactsSo14CNContactStoreCRbzlE10containersAA10ObservableCySaySo11CNContainerCGGSo11NSPredicateCSg8matching_tF">containers(matching:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Fetches all containers matching the specified predicate.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">containers</span><span class="p">(</span><span class="n">matching</span> <span class="nv">predicate</span><span class="p">:</span> <span class="kt">NSPredicate</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Observable</span><span class="o">&lt;</span><span class="p">[</span><span class="kt">CNContainer</span><span class="p">]</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>predicate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The predicate to use to fetch matching containers. Set this property to nil to match all containers.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An array of CNContainer objects that match the predicate.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7RxSwift8ReactiveV0A8ContactsSo14CNContactStoreCRbzlE09enumerateD0AA10ObservableCySo0E0C_Spy10ObjectiveC8ObjCBoolVGtGSo0E12FetchRequestC4with_tF"></a>
+                    <a name="//apple_ref/swift/Method/enumerateContacts(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7RxSwift8ReactiveV0A8ContactsSo14CNContactStoreCRbzlE09enumerateD0AA10ObservableCySo0E0C_Spy10ObjectiveC8ObjCBoolVGtGSo0E12FetchRequestC4with_tF">enumerateContacts(with:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a Boolean value that indicates whether the enumeration of all contacts matching a contact fetch request executed successfully.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">enumerateContacts</span><span class="p">(</span><span class="n">with</span> <span class="nv">fetchRequest</span><span class="p">:</span> <span class="kt">CNContactFetchRequest</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Observable</span><span class="o">&lt;</span><span class="p">(</span><span class="kt">CNContact</span><span class="p">,</span> <span class="kt">UnsafeMutablePointer</span><span class="o">&lt;</span><span class="kt">ObjCBool</span><span class="o">&gt;</span><span class="p">)</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>fetchRequest</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The contact fetch request that specifies the search criteria.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>true if enumeration of all contacts matching a contact fetch request executes successfully; otherwise, false</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7RxSwift8ReactiveV0A8ContactsSo14CNContactStoreCRbzlE7executeAA10ObservableCyytGSo13CNSaveRequestCF"></a>
+                    <a name="//apple_ref/swift/Method/execute(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7RxSwift8ReactiveV0A8ContactsSo14CNContactStoreCRbzlE7executeAA10ObservableCyytGSo13CNSaveRequestCF">execute(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Executes a save request and returns success or failure.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">execute</span><span class="p">(</span><span class="n">_</span> <span class="nv">saveRequest</span><span class="p">:</span> <span class="kt">CNSaveRequest</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Observable</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>saveRequest</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The save request to execute.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>true if the save request executes successfully; otherwise, false.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7RxSwift8ReactiveV0A8ContactsSo14CNContactStoreCRbzlE9didChangeAA10ObservableCy10Foundation12NotificationVGyF"></a>
+                    <a name="//apple_ref/swift/Method/didChange()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7RxSwift8ReactiveV0A8ContactsSo14CNContactStoreCRbzlE9didChangeAA10ObservableCy10Foundation12NotificationVGyF">didChange()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Posted notifications when changes occur in another CNContactStore.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">didChange</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Observable</span><span class="o">&lt;</span><span class="kt">Notification</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Notification Object</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://github.com/satishbabariya/RxContacts" target="_blank" rel="external">Satish Babariya</a>. All rights reserved. (Last updated: 2018-06-08)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

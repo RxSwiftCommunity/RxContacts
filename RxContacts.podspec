@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "RxContacts"
-  s.version      = "1.0.2"
+  s.version      = "1.0.3"
   s.summary      = "RxSwift extensions for Contacts framework."
 
   s.homepage     = "https://github.com/RxSwiftCommunity/RxContacts"
@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.author       = { "Satish Babariya" => "satish.babariya@gmail.com" }
 
   s.cocoapods_version = '>= 1.4.0'
-  s.swift_version = '4.0'
+  s.swift_version = '5.0'
 
   s.ios.deployment_target = "9.0"
   s.osx.deployment_target = "10.12"
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.framework  = "Foundation" ,"Contacts"
 
   s.static_framework = true
-  s.dependency 'RxSwift', '~> 4'
-  s.dependency 'RxCocoa', '~> 4'
+  s.dependency 'RxSwift', '~> 5'
+  s.dependency 'RxCocoa', '~> 5'
 
 end

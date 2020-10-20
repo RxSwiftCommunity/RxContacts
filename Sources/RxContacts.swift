@@ -116,8 +116,8 @@ extension Reactive where Base: CNContactStore {
             do {
                 try self.base.enumerateContacts(with: fetchRequest, usingBlock: { contact, pointer in
                     observer.onNext((contact, pointer))
-                    observer.onCompleted()
                 })
+                observer.onCompleted()
                 
             } catch {
                 observer.onError(error)
